@@ -29,8 +29,6 @@
       margin: 0 24px;
       font-family: 'Arial', sans-serif;
       font-size: 15px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
     }
 
     nav a:hover { color: #fff; }
@@ -50,10 +48,15 @@
     }
 
     .profile img {
-      width: 200px;
+      width: 50%;
+      flex-shrink: 0;
       border-radius: 4px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .profile-text {
+      width: 50%;
     }
 
     .profile-text h1 {
@@ -101,7 +104,8 @@
     /* --- Responsive --- */
     @media (max-width: 600px) {
       .profile { flex-direction: column; }
-      .profile img { width: 150px; }
+      .profile img { width: 100%; }
+      .profile-text { width: 100%; }
     }
   </style>
 </head>
@@ -116,10 +120,10 @@
   <div class="container">
     <div class="profile">
 
-      <img src="yo2025.jpg" alt="Alba Vazquez García">
+      <img src="photo.jpg" alt="Alba Vázquez García">
 
       <div class="profile-text">
-        <h1>Alba Vazquez García</h1>
+        <h1>Alba Vázquez García</h1>
         <p class="subtitle">PhD Candidate in Economics</p>
 
         <p>
@@ -136,12 +140,5 @@
 
         <div class="links">
           <a href="https://drive.google.com/file/d/1VxuDGUDa9SECxXM5EzKxAefnQZyejyWd/view">CV</a>
-          <a href="mailto:alba.vazquezgarcia@psemail.eu">Email</a>
+          <a href="/cdn-cgi/l/email-protection#d9b8b5bbb8f7afb8a3a8acbca3beb8abbab0b899a9aabcb4b8b0b5f7bcac">Email</a>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-</body>
-</html>
